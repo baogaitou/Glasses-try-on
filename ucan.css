@@ -1,0 +1,82 @@
+/* Version: $Id: global.css 180 2009-04-01 13:43:42Z David $ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/*重写html标签样式*/
+body{font-family:Tahoma;border-top:0px solid #EFEFEF;color:#333;font-size:12px;padding:0px}
+a:focus{outline:1px dotted invert}
+hr{border-color:#ccc;border-style:solid;border-width:1px 0 0;clear:both;height:0}
+h1{font-size:25px}
+h2{font-size:23px}
+h3{font-size:21px}
+h4{font-size:19px}
+h5{font-size:17px}
+h6{font-size:15px}
+ol{list-style:decimal}
+ul{list-style:square}
+li{margin-left:30px}
+dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:5px}
+
+/*layout style*/
+.container_16{}/*{background:url(http://static.cola.fm/v1/imgs/16_col.gif) repeat-y;}*/
+.clearfix:after	{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.clearfix {display:block;}
+.clr {clear:both}
+.col-1 {float:left;width:415px}
+.col-2 {float:right;width:518px}
+
+p {line-height:160%}
+
+input {padding:2px;}
+input.s{ border-top: 1px solid #7c7c7c;border-left: 1px solid #7c7c7c;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;padding: 4px;width: 160px;font-size: 12px;font-family: 'lucida grande',tahoma}
+input.b{padding:4px;font-size:12px}
+/* label {margin:0 20px 5px 5px;padding:0} */
+select.s{border-top: 1px solid #7c7c7c;border-left: 1px solid #7c7c7c;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;;padding:3px 2px 3px 1px;height:24px;line-height:24px;font-size: 12px;font-family: 'lucida grande',tahoma}
+textarea{ border-top: 1px solid #7c7c7c;border-left: 1px solid #7c7c7c;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;font-family:Tahoma;font-size:12px}
+
+body {background:#CCCCCC}
+.page {width:938px; margin:0 auto;background:#FFFFFF;padding:5px}
+
+ul.thumb {}
+ul.thumb li {float:left;list-style:none;margin:0;padding:0}
+ul.thumb li img {border:1px solid #CCCCCC;margin-right:5px}
+ul.thumb li img:hover {border:1px solid #66CCFF;margin-right:5px}
+ul.thumb li span {display:block;margin-top:5px;text-align:center}
+
+.glassFrame {position:relative;width:403px;height:500px;overflow:hidden;background:#666666}
+.glassFrame .glass {position:absolute;z-index:1000}
+.glassFrame .glassAvatar {position:absolute;z-index:900;cursor:move}
+.glassFrame .loading {position:absolute;z-index:901;background:#FFFFFF;border:6px solid #FFFFFF;opacity:0;filter:alpha(opacity=0);-moz-opacity:0}
+.glassFrame .dragInfo {position:absolute;z-index:902}
+.glassFrame .drager {position:absolute;z-index:1001;cursor:move;background:url(imgs/shim.gif)}
+.glassFrame .drager:hover {border:1px dashed #FF4500}
+div.dragging {border:1px dashed #FF4500}
+
+.glass-select-container div{padding:4px; border-bottom:1px solid #EFEFEF;height:24px;line-height:24px;color:#666666}
+.glass-select-container div.hi-light {background:#F6F6F6}
+.glass-select-container div input {margin:0 2px 0 2px;font-family:tahoma;color:#666666}
+.glass-select-container div select {margin:0 2px 0 2px;font-size:12px;font-family:tahoma;color:#666666}
+
+.pager {background:#EFEFEF;padding:8px;text-align:center}
+.pager a {color:#666699;text-decoration:none;padding:0 4px}
+.pager a:hover {color:#6600FF}
+.pager span {background:#FF4500;color:#FFFFFF;padding:0 4px}
+
+.glass-info {border:1px solid #3399CC;padding:8px;margin-top:10px}
+.glass-info:hover {border:1px solid #FF4500}
+.glass-info .glass-thumb {float:left;width:160px}
+.glass-info .glass-desc {float:left;margin-left:15px}
+.glass-info .glass-desc h4 {font-size:14px;font-weight:bolder;color:#FF4500}
+
+.control-area-background {position:absolute;z-index:1010;width:393px;left:5px;right:6px;height:65px;top:428px;background:#CCCCCC;border:1px solid #FFFFFF;opacity:0.4;filter:alpha(opacity=40);-moz-opacity:0.4}
+.control-area {position:absolute;z-index:1011;width:393px;left:5px;right:6px;height:65px;top:430px;}
+.control-area div{padding:5px 0 0px 10px}
+.control-area div input {padding:1px;font-size:12px;font-family:simsun}
+
+.text-desc {text-align:center;padding:6px;color:#666666;margin:6px 0}
+
+div.avtzoom{position:absolute;z-index:1003;width:200px;left:10px;top:10px;width: 188px;height: 42px;background: URL(imgs/avatarzoom.gif) left top no-repeat;}
+div.slider {margin:0 8px}
+div.slider div.knob {background:url(imgs/avatarzoomslider.gif) left bottom no-repeat;width: 13px;height: 14px;padding:16px 0 0 0}
+
+
+div.glasszoom{position:absolute;z-index:1003;width:200px;left:110px;top:375px;width: 188px;height: 42px;background: URL(imgs/avatarzoom.gif) left top no-repeat;}
